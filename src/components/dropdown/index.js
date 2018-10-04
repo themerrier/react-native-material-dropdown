@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { PureComponent } from 'react';
 import {
   Text,
+  Image,
   View,
   FlatList,
   Animated,
@@ -555,9 +556,7 @@ export default class Dropdown extends PureComponent {
 
     return (
       <View style={styles.accessory}>
-        <View style={styles.triangleContainer}>
-          <View style={[styles.triangle, triangleStyle]} />
-        </View>
+          <Image source={require('../../arrow.png')} style={{width: 17, top:12, position: 'absolute'}} />
       </View>
     );
   }
